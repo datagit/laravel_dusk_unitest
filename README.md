@@ -7,3 +7,13 @@ $ composer require --dev laravel/dusk
 # following: https://www.sitepoint.com/laravel-dusk-intuitive-and-easy-browser-testing-for-all/
 $ php artisan dusk:install
 ```
+
+```bash
+#check connect to DB by tinker
+$ php artisan tinker
+    $ DB::connection()->getPdo();
+# create auth
+$ php artisan make:auth
+# create table user
+$ php artisan migrate
+```
