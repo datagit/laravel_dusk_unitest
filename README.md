@@ -26,3 +26,9 @@ $ php artisan dusk
 
 ```
 
+test Database
+```bash
+# tests/Unit/ExampleDatabaseTest.php
+$ ./vendor/bin/phpunit tests/Unit/
+
+```
