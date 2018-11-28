@@ -7,6 +7,8 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleDatabaseTest extends TestCase
 {
+    use RefreshDatabase;
+
     public function testDatabaseHas_users_by_email()
     {
         $this->assertDatabaseHas('users', [

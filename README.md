@@ -61,3 +61,13 @@ $ ./vendor/bin/phpunit tests/Unit/
     Tests\Unit\TemplateMethodsTest::testTwo
     Tests\Unit\TemplateMethodsTest::tearDown
 ```
+make model
+```bash
+
+$ php artisan make:model Post --factory --migration
+$ php artisan make:seeder UsersTableSeeder
+$ php artisan make:seeder PostsTableSeeder
+$ php artisan migrate
+$ php artisan db:seed
+
+```
