@@ -1,6 +1,7 @@
 # laravel_dusk_unitest
 laravel_dusk_unitest
-doc: https://laravel.com/docs/5.7/dusk
+- https://laravel.com/docs/5.7/dusk
+- https://laravel.com/docs/5.7/database-testing
 ```bash
 $ ~/.composer/vendor/bin/laravel new laravel_dusk_unitest
 $ composer require --dev laravel/dusk
@@ -29,6 +30,34 @@ $ php artisan dusk
 test Database
 ```bash
 # tests/Unit/ExampleDatabaseTest.php
-$ ./vendor/bin/phpunit tests/Unit/
+$  ./vendor/bin/phpunit tests/Unit/ --testdox
+```
 
+output
+```bash
+Unit\ExampleDatabase
+ ✔ DatabaseHas users by email
+ ✔ DatabaseMissing users by email
+
+Unit\Example
+ ✔ Basic condition true
+
+Time: 235 ms, Memory: 12.00MB
+```
+
+https://phpunit.de/manual/6.5/en/appendixes.annotations.html#appendixes.annotations.covers.tables.annotations
+
+https://phpunit.de/manual/6.5/en/fixtures.html
+```bash
+$ ./vendor/bin/phpunit tests/Unit/
+    Tests\Unit\TemplateMethodsTest::setUpBeforeClass
+    Tests\Unit\TemplateMethodsTest::setUp
+    Tests\Unit\TemplateMethodsTest::assertPreConditions
+    Tests\Unit\TemplateMethodsTest::testOne
+    Tests\Unit\TemplateMethodsTest::assertPostConditions
+    Tests\Unit\TemplateMethodsTest::tearDown
+    .Tests\Unit\TemplateMethodsTest::setUp
+    Tests\Unit\TemplateMethodsTest::assertPreConditions
+    Tests\Unit\TemplateMethodsTest::testTwo
+    Tests\Unit\TemplateMethodsTest::tearDown
 ```

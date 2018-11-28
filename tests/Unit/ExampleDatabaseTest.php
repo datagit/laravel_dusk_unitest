@@ -7,15 +7,17 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ExampleDatabaseTest extends TestCase
 {
-    public function testDatabase()
+    public function testDatabaseHas_users_by_email()
     {
-        // Make call to application...
         $this->assertDatabaseHas('users', [
             'email' => 'u1@gmail.com',
         ]);
+    }
 
+    public function testDatabaseMissing_users_by_email()
+    {
         $this->assertDatabaseMissing('users', [
-            'email' => 'notfound',
+            'email' => 'not found',
         ]);
     }
 }
