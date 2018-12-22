@@ -70,4 +70,5 @@ $ php artisan make:seeder PostsTableSeeder
 $ php artisan migrate
 $ php artisan db:seed
 
+
 ```
