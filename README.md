@@ -3,6 +3,10 @@ laravel_dusk_unitest
 - https://laravel.com/docs/5.7/dusk
 - https://laravel.com/docs/5.7/database-testing
 ```bash
+$ composer install --ignore-platform-reqs
+# make .env from .env.example
+
+
 $ ~/.composer/vendor/bin/laravel new laravel_dusk_unitest
 $ composer require --dev laravel/dusk
 # following: https://www.sitepoint.com/laravel-dusk-intuitive-and-easy-browser-testing-for-all/
